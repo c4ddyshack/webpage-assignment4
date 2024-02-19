@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Front End</title>
+    <style>
+        /* CSS styles for the banner */
+        .banner {
+            background-color: #f1f1f1;
+            padding: 5px; /* Adjust the padding value as needed */
+            text-align: center;
+        }
+
+        /* CSS styles for the user profiles */
+        .profile {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* CSS styles for the profile pictures */
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* CSS styles for the logo */
+        .banner img {
+            width: 200px; /* Adjust the width value as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="calebgram-high-resolution-logo.png" alt="Logo">
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyDVcGZIxYttB8_egkox22X_aXEVlgViSbA",
+            authDomain: "profileapp-5d4e3.firebaseapp.com",
+            databaseURL: "https://profileapp-5d4e3-default-rtdb.firebaseio.com",
+            projectId: "profileapp-5d4e3",
+            storageBucket: "profileapp-5d4e3.appspot.com",
+            messagingSenderId: "1068329741369",
+            appId: "1:1068329741369:web:d2619c845aac04402b31e8"
+        };
+    </script>
+
+    <iframe src="https://thunkable.site/w/tc1RqyIkiA0xPDALCnDt-" width="100%" height="500px"></iframe>
+
+    <div id="userProfiles">
+        <div class="profile">
+            <div class="profile-content">
+                <p class="profile-name">Caleb Cady</p>
+                <img class="profile-picture" src="http://res.cloudinary.com/thunkablecloudinary123/image/upload/v1707868877/l7qlvmesrhfnoyofygpx.png" alt="User 1">
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile-content">
+                <p class="profile-name">Testy</p>
+                <img class="profile-picture" src="http://res.cloudinary.com/thunkablecloudinary123/image/upload/v1707869067/hxpz6cs4f4zhw2zv8cef.png" alt="User 2">
+            </div>
+        </div>
+    </div>
